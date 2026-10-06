@@ -1,0 +1,10 @@
+/target
+.env
+*.log
+softhsm_data/
+tokens/
+*.db
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

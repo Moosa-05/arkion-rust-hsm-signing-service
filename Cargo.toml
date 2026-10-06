@@ -1,0 +1,26 @@
+[package]
+name = "arkion-rust-hsm-signing-service"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.38", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+axum = "0.7"
+base64 = "0.22"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+thiserror = "2.0"
+cryptoki = "0.8"
+p256 = { version = "0.13", features = ["ecdsa", "pkcs8", "arithmetic"] }
+ecdsa = { version = "0.16", features = ["verifying", "signing", "der"] }
+sha2 = "0.10"
+aes-gcm = "0.10"
+async-trait = "0.1"
+dotenvy = "0.15"
+rand_core = "0.6"
+
+[dev-dependencies]
+tempfile = "3.10"
+tower = { version = "0.4", features = ["util"] }
